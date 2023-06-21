@@ -32,6 +32,9 @@ from config import db, bcrypt
 
 #     table_column_id = db.Column( db.Integer, db.ForeignKey( 'table.id' ) )
 
+#     def __repr__ ( self ) :
+#         return f"{{ ModelName { self.id } }}"
+
 #     validation_errors = []
 
 #     def get_validation_errors ( self ) :

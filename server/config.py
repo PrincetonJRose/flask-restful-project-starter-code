@@ -1,4 +1,4 @@
-# Remote library imports
+# Imports for config file
 from flask import Flask, request
 from flask_cors import CORS
 from flask_migrate import Migrate
@@ -7,7 +7,6 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
 from flask_bcrypt import Bcrypt
 
-# Local imports
 
 # Instantiate app, set attributes
 app = Flask(__name__)
