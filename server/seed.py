@@ -12,7 +12,6 @@ if __name__ == '__main__':
     with app.app_context():
         print("Seeding... 🌱")
 
-
         print( 'Wiping tables...' )
         # Clear all the tables!
 
