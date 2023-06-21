@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from config import app, db, api, Resource, bcrypt, request
+import requests, json
 
 # Import models here!!!
 # from models import 
