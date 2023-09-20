@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-from config import app, db, api, Resource, bcrypt, request
+# Import everything we need for our api from our config file
+from config import app, db, api, Resource, bcrypt, request, make_response, session
 import requests, json
 
 # Import models here!!!

@@ -9,21 +9,8 @@ from config import db, bcrypt
 # Models go here!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Model template!
-# class NameOfClass ( db.Model ) :
+# class NameOfClass ( db.Model, SerializerMixin ) :
 #     __tablename__ = 'name of class plural'
 
 #     id = db.Column( db.Integer, primary_key = True )
@@ -33,13 +20,10 @@ from config import db, bcrypt
 #     table_column_id = db.Column( db.Integer, db.ForeignKey( 'table.id' ) )
 
 #     def __repr__ ( self ) :
-#         return f"{{ ModelName { self.id } }}"
+#         return f"< ModelName { self.id } >"
 
 #     validation_errors = []
 
-#     def get_validation_errors ( self ) :
-#         return list( set( self.validation_errors ) )
-    
 #     @classmethod
 #     def clear_validation_errors ( cls ) :
 #         cls.validation_errors = []

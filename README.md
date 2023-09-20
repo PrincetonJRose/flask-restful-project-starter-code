@@ -7,13 +7,16 @@ For setup
 - `pipenv install && pipenv shell`
 
 
-In the server folder:
+In the server folder if you want to use 'flask run':
 - `export FLASK_APP=app.py`
 - `export FLASK_RUN_PORT=3000`
+- `export FLASK_DEBUG=1`
 
-- `flask db init` to create initial db setup
+Or you can just run app.py to start the server! ^_^
 
-- `flask db revision --autogenerate -m 'message here!'` creates a db migration
+To create your database after working on your models
+- `flask db init` ( to create initial db setup )
+
+- `flask db revision --autogenerate -m 'message here!'` ( creates a db migration )
 - `flask db upgrade head`
 
-Run app.py to start the server! ^_^
