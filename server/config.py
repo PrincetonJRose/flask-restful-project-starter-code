@@ -6,6 +6,7 @@ from flask_restful import Api, Resource
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
 from flask_bcrypt import Bcrypt
+import os
 
 # Instantiate app, set attributes
 app = Flask(__name__)
@@ -16,8 +17,10 @@ app.json.compact = False
 # Set up:
     # generate a secrete key `python -c 'import os; print(os.urandom(16))'`
     # set the app.secret_key variable equal to what's printed in the console
-    # app.secret_key = 
+    # app.secret_key = 'Secret Key here!'
 
+    # or if you want it to be random every time you can set it like this
+    # app.secret_key = os.urandom( 16 ).hex()
 
 # Define metadata, instantiate db
 metadata = MetaData(naming_convention={
